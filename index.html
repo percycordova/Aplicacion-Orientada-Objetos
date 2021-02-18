@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--boostarp cdn-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light text-center">
+        <a href="#" class="navbar-brand ">Product App</a>
+    </nav>
+    <div class="container ">
+        <!---------Application------->
+        <div id="app" class="row pt-5">
+
+            <!--formulario-->
+            <div class="col-md-4 ">
+                <div class="card mb-3">
+                    <div class="card-header ">
+                        <h4 class="text-center">Add a Product</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="product-form">
+                            <div class="form-group">
+                                <input type="text " required id="name" placeholder="Product Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" required step="0.1" id="price" placeholder="Product Price"
+                                    class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" required id="year" value="2018" min="1900" max="2030"
+                                    placeholder="Product Year" class="form-control">
+                            </div>
+                            <input type="submit" value="save" class="btn btn-primary btn-block">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--fin del formulario-->
+            
+            <div id="product-list" class="col-md-8 style-product">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <script src="js/bootstrap.min.js"></script>
+    <script src="jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="jquery/popper.min.js"></script>-->
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
